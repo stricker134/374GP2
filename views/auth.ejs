@@ -23,6 +23,17 @@
     <link href="stylesheets/resume.css" rel="stylesheet">
 
   </head>
+  <style type="text/css">
+    html, body {
+    height: 100%;
+    margin: 0;
+    background-color: #F9F9F9;
+    }
+    
+    #wrapper {
+    min-height: 100%; 
+    }
+    </style>
 
   <body id="page-top">
 
@@ -39,40 +50,40 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../#education">Education</a>
+            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../#experience">Experience</a>
+            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../#skills">Skills & Interests</a>
+            <a class="nav-link js-scroll-trigger" href="#skills">Skills & Interests</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../#scholarships">Grants, Scholarships, Awards</a>
+            <a class="nav-link js-scroll-trigger" href="#scholarships">Grants, Scholarships, Awards</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../#development">Development</a>
+            <a class="nav-link js-scroll-trigger" href="#development">Development</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../#affiliations">Affiliations & Services</a>
+            <a class="nav-link js-scroll-trigger" href="#affiliations">Affiliations & Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../#courses">Courses</a>
+            <a class="nav-link js-scroll-trigger" href="#courses">Courses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../#opportunities">Opportunities</a>
+            <a class="nav-link js-scroll-trigger" href="#opportunities">Opportunities</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../#publications">Publications</a>
+            <a class="nav-link js-scroll-trigger" href="#publications">Publications</a>
           </li>
 
           <hr style="height: 2px; background-color: white;">
 
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="../blog"><i class="fas fa-arrow-right"></i> Blog</a>
+            <a class="nav-link js-scroll-trigger" href="#blog"><i class="fas fa-arrow-right"></i> Blog</a>
           </li>
         </ul>
       </div>
@@ -85,31 +96,16 @@
                 <!-- Main Content -->
                 <div class="index-content">
                     <div class="container">
-                            <form action="/submit" method="post">
-                                <div class="form-group">
-                                    <label for="postTitle">Post Title</label>
-                                    <input type="text" class="form-control" id="postTitle" aria-describedby="titleHelp" name="title" placeholder="Enter Post Title">
-                                    <small id="titleHelp" class="form-text text-muted">Think of something clever! :)</small>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="link">Link</label>
-                                    <input type="text" class="form-control" id="link" aria-describedby="categoryHelp" name="link" placeholder="Insert Story Link Here">
-                                    <small id="categoryHelp" class="form-text text-muted">#Agile, #Technology, #Business, #Report, #Research, etc.</small>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="textArea">Post Body</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="20" name="postBody"></textarea>
-                                </div>
+                            <form action="/auth" method="post">
                                 
+
                                 <div class="form-group">
-                                    <label for="exampleFormControlFile1">Image Link</label>
-                                    <input type="text" class="form-control" id="imageLink" aria-describedby="titleHelp" name="imageLink" placeholder="Image Link">
+                                    <label for="password">Enter Your Password</label>
+                                    <input type="password" class="form-control" id="code" name="code" placeholder="Enter your password">
                                 </div>
 
                                 <div class="form-group">
-                                    <button type="submit" class="blue-button">Post</button>
+                                    <button type="submit" class="blue-button">Submit</button>
                                 </div> 
                             </form>
                     </div>
